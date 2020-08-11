@@ -45,9 +45,11 @@
                                     <action selector="addText:" destination="HOv-YH-dfQ" eventType="touchDown" id="AvB-wE-3lx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72A-Go-Cow">
-                                <rect key="frame" x="189" y="520" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72A-Go-Cow">
+                                <rect key="frame" x="87" y="552" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fOj-Tl-3xU"/>
+                                </constraints>
                                 <state key="normal" title="Clear"/>
                             </button>
                         </subviews>
@@ -56,7 +58,9 @@
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="5CN-E1-JLh"/>
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="top" secondItem="mcD-4C-Lu1" secondAttribute="bottom" constant="40" id="7sh-Zw-yFY"/>
                             <constraint firstItem="mcD-4C-Lu1" firstAttribute="top" secondItem="SAC-3D-GIS" secondAttribute="bottom" constant="40" id="9S7-3c-cYn"/>
+                            <constraint firstItem="72A-Go-Cow" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="XXz-mx-Ggq"/>
                             <constraint firstItem="mcD-4C-Lu1" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="a4S-bN-by9"/>
+                            <constraint firstItem="72A-Go-Cow" firstAttribute="top" secondItem="h1I-2B-V7f" secondAttribute="bottom" constant="40" id="fop-gt-C8l"/>
                             <constraint firstItem="SAC-3D-GIS" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="l5m-Al-GqV"/>
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="centerY" secondItem="AJf-tg-maZ" secondAttribute="centerY" id="qxP-vA-nDO"/>
                         </constraints>
