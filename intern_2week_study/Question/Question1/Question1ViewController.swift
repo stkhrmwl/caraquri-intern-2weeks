@@ -8,5 +8,10 @@ final class Question1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setValueOnTextView(value: "")
+    }
+    
+    private func setValueOnTextView(value: String) {
+        self.textView.text = value
     }
 }
