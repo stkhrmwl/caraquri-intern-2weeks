@@ -55,16 +55,19 @@
                                     <action selector="clearText:" destination="HOv-YH-dfQ" eventType="touchDown" id="dzR-P8-CeD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd7-IP-dLs">
-                                <rect key="frame" x="186" y="282" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd7-IP-dLs">
+                                <rect key="frame" x="87" y="282" width="240" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="j1G-cU-hKr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Jd7-IP-dLs" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="2Kt-eH-fbr"/>
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="5CN-E1-JLh"/>
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="top" secondItem="mcD-4C-Lu1" secondAttribute="bottom" constant="40" id="7sh-Zw-yFY"/>
                             <constraint firstItem="mcD-4C-Lu1" firstAttribute="top" secondItem="SAC-3D-GIS" secondAttribute="bottom" constant="40" id="9S7-3c-cYn"/>
@@ -73,6 +76,7 @@
                             <constraint firstItem="72A-Go-Cow" firstAttribute="top" secondItem="h1I-2B-V7f" secondAttribute="bottom" constant="40" id="fop-gt-C8l"/>
                             <constraint firstItem="SAC-3D-GIS" firstAttribute="centerX" secondItem="AJf-tg-maZ" secondAttribute="centerX" id="l5m-Al-GqV"/>
                             <constraint firstItem="h1I-2B-V7f" firstAttribute="centerY" secondItem="AJf-tg-maZ" secondAttribute="centerY" id="qxP-vA-nDO"/>
+                            <constraint firstItem="Jd7-IP-dLs" firstAttribute="top" secondItem="SAC-3D-GIS" secondAttribute="bottom" constant="8" id="uwy-Ni-RHx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tUl-ih-lXm"/>
                     </view>
