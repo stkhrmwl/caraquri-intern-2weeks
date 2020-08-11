@@ -83,6 +83,7 @@
                     <connections>
                         <outlet property="addTextButton" destination="mcD-4C-Lu1" id="mCX-sP-Nbt"/>
                         <outlet property="clearTextButton" destination="72A-Go-Cow" id="HgH-ad-jKU"/>
+                        <outlet property="label" destination="Jd7-IP-dLs" id="MFm-Kh-zpQ"/>
                         <outlet property="textField" destination="SAC-3D-GIS" id="kBt-tg-yHt"/>
                         <outlet property="textView" destination="h1I-2B-V7f" id="dkf-fw-Acv"/>
                     </connections>
