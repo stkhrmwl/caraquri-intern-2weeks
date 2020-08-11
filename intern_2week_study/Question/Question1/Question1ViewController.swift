@@ -5,6 +5,7 @@ final class Question1ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var addTextButton: UIButton!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var clearTextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,11 @@ final class Question1ViewController: UIViewController {
     @IBAction func addText(_ sender: Any) {
         let replaceValue = self.getValueOnTextView() + "\n" + self.getValueOnTextField()
         self.setValueOnTextView(value: replaceValue)
+    }
+    
+    // clearTextButtonイベント
+    @IBAction func clearText(_ sender: Any) {
+        self.setValueOnTextView(value: "")
     }
     
     // textFieldの文字列を取得する
