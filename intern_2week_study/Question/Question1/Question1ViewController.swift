@@ -14,8 +14,12 @@ final class Question1ViewController: UIViewController {
 
     // addTextButtonイベント
     @IBAction func addText(_ sender: Any) {
-        let replaceValue = self.getValueOnTextView() + "\n" + self.getValueOnTextField()
-        self.setValueOnTextView(value: replaceValue)
+        let addStr = self.getValueOnTextField()
+        if addStr != "" {
+            let currentStr = self.getValueOnTextView()
+            let replaceStr = currentStr + (currentStr != "" ? "\n" : "") + addStr
+            self.setValueOnTextView(value: replaceStr)
+        }
     }
     
     // clearTextButtonイベント
