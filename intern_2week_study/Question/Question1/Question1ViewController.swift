@@ -11,15 +11,15 @@ final class Question1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setValueOnTextView(value: "")
+        self.setValueOnLabel(value: "")
     }
 
     // addTextButtonイベント
     @IBAction func addText(_ sender: Any) {
-        let addStr = self.getValueOnTextField()
-        if addStr != "" {
+        if let addStr = self.getValueOnTextField(), !addStr.isEmpty {
             self.setValueOnLabel(value: "")
             let currentStr = self.getValueOnTextView()
-            let replaceStr = currentStr + (currentStr != "" ? "\n" : "") + addStr
+            let replaceStr = currentStr + (!currentStr.isEmpty ? "\n" : "") + addStr
             self.setValueOnTextView(value: replaceStr)
         } else {
             self.setValueOnLabel(value: "文字を入力してください")
@@ -37,8 +37,8 @@ final class Question1ViewController: UIViewController {
     }
     
     // textFieldの文字列を取得する
-    private func getValueOnTextField() -> String {
-        return self.textField.text!
+    private func getValueOnTextField() -> String? {
+        return self.textField.text
     }
     
     // textViewの文字列を取得する
