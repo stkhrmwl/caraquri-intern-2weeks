@@ -20,15 +20,13 @@ final class Question1ViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    @IBAction func didAddButtonTouched(_ sender: Any) {
-        if let addStr = textField.text, !addStr.isEmpty {
+    @IBAction func didTouchAddButtonTouched(_ sender: Any) {
+        guard let addStr = textField.text, addStr.isEmpty else {
             label.text = ""
-            let currentStr = textView.text!
-            let replaceStr = currentStr + (!currentStr.isEmpty ? "\n" : "") + addStr
-            textView.text = replaceStr
-        } else {
-            label.text = "文字を入力してください"
+            textView.text += (textView.text.isEmpty ? "" : "\n") + textField.text!
+            return
         }
+        label.text = "文字を入力してください"
     }
     
     @IBAction func didClearButtonTouched(_ sender: Any) {
