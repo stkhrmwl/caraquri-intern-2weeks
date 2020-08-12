@@ -20,7 +20,7 @@ final class Question1ViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    @IBAction func addText(_ sender: Any) {
+    @IBAction func didAddButtonTouched(_ sender: Any) {
         if let addStr = textField.text, !addStr.isEmpty {
             label.text = ""
             let currentStr = textView.text!
@@ -31,8 +31,7 @@ final class Question1ViewController: UIViewController {
         }
     }
     
-    // clearTextButtonイベント
-    @IBAction func clearText(_ sender: Any) {
+    @IBAction func didClearButtonTouched(_ sender: Any) {
         textView.text = ""
     }
 }
