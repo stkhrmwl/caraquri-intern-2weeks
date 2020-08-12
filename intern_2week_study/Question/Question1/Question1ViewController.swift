@@ -1,6 +1,6 @@
 import UIKit
 
-final class Question1ViewController: UIViewController {
+final class Question1ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var addTextButton: UIButton!
@@ -12,6 +12,18 @@ final class Question1ViewController: UIViewController {
         super.viewDidLoad()
         self.setValueOnTextView(value: "")
         self.setValueOnLabel(value: "")
+        self.textField.delegate = self
+    }
+    
+    // textFieldの外がタップされた際にキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    // returnがタップされた際にキーボードを閉じる
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     // addTextButtonイベント
