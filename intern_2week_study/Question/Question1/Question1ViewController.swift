@@ -10,9 +10,9 @@ final class Question1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setValueOnTextView(value: "")
-        self.setValueOnLabel(value: "")
-        self.textField.delegate = self
+        textField.delegate = self
+        textView.text = ""
+        label.text = ""
     }
     
     // textFieldの外がタップされた際にキーボードを閉じる
@@ -20,41 +20,20 @@ final class Question1ViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    // addTextButtonイベント
     @IBAction func addText(_ sender: Any) {
-        if let addStr = self.getValueOnTextField(), !addStr.isEmpty {
-            self.setValueOnLabel(value: "")
-            let currentStr = self.getValueOnTextView()
+        if let addStr = textField.text, !addStr.isEmpty {
+            label.text = ""
+            let currentStr = textView.text!
             let replaceStr = currentStr + (!currentStr.isEmpty ? "\n" : "") + addStr
-            self.setValueOnTextView(value: replaceStr)
+            textView.text = replaceStr
         } else {
-            self.setValueOnLabel(value: "文字を入力してください")
+            label.text = "文字を入力してください"
         }
     }
     
     // clearTextButtonイベント
     @IBAction func clearText(_ sender: Any) {
-        self.setValueOnTextView(value: "")
-    }
-    
-    // labelに文字列をセットする
-    private func setValueOnLabel(value: String) {
-        self.label.text = value
-    }
-    
-    // textFieldの文字列を取得する
-    private func getValueOnTextField() -> String? {
-        return self.textField.text
-    }
-    
-    // textViewの文字列を取得する
-    private func getValueOnTextView() -> String {
-        return self.textView.text
-    }
-    
-    // textViewに文字列をセットする
-    private func setValueOnTextView(value: String) {
-        self.textView.text = value
+        textView.text = ""
     }
 }
 
