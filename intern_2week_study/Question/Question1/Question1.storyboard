@@ -40,7 +40,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="fOj-Tl-3xU"/>
                                 </constraints>
-                                <state key="normal" title="Clear"/>
+                                <state key="normal" title="消去"/>
                                 <connections>
                                     <action selector="clearText:" destination="HOv-YH-dfQ" eventType="touchDown" id="dzR-P8-CeD"/>
                                 </connections>
@@ -59,7 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="0PX-k5-h7v"/>
                                 </constraints>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="追加"/>
                                 <connections>
                                     <action selector="addText:" destination="HOv-YH-dfQ" eventType="touchDown" id="AvB-wE-3lx"/>
                                 </connections>
