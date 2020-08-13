@@ -8,6 +8,7 @@ final class Question2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(R.nib.question2Cell)
     }
 }
 
@@ -18,6 +19,9 @@ extension Question2ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.question2Cell, for: indexPath) else {
+            return Question2Cell()
+        }
         // 仮のセル
         return UITableViewCell()
     }
