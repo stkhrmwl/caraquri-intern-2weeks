@@ -11,6 +11,7 @@ final class Question2ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(R.nib.question2Cell)
+        tableView.tableFooterView = UIView()
     }
 }
 
