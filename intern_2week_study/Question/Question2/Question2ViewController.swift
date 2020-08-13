@@ -30,14 +30,14 @@ extension Question2ViewController: UITableViewDataSource {
         cell.setParams(url, areaTexts[indexPath.row])
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let ac = UIAlertController(title: areaTexts[indexPath.row], message: "Press \"OK\"", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(ac, animated: true)
-    }
 }
 
 extension Question2ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? Question2Cell {
+            let ac = UIAlertController(title: cell.label.text, message: "Press \"OK\"", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(ac, animated: true)
+        }
+    }
 }
