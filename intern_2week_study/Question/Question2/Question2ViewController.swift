@@ -2,7 +2,7 @@ import UIKit
 
 final class Question2ViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     private let areaTexts: [String] = ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県"]
     
@@ -35,7 +35,7 @@ extension Question2ViewController: UITableViewDataSource {
 extension Question2ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? Question2Cell {
-            let ac = UIAlertController(title: cell.label.text, message: "Press \"OK\"", preferredStyle: .alert)
+            let ac = UIAlertController(title: cell.getLabel(), message: "Press \"OK\"", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(ac, animated: true)
         }
