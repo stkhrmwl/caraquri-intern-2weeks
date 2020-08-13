@@ -5,8 +5,8 @@ final class Question1ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var addTextButton: UIButton!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var clearTextButton: UIButton!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var removeAllTextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
