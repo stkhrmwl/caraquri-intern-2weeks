@@ -19,10 +19,12 @@ extension Question2ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.question2Cell, for: indexPath) else {
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.question2Cell, for: indexPath),
+            let url = URL(string: "https://placehold.jp/36x36.png") else {
             return Question2Cell()
         }
-        // 仮のセル
-        return UITableViewCell()
+        cell.setParams(url, areaTexts[indexPath.row])
+        return cell
     }
 }
