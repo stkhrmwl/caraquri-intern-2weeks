@@ -35,7 +35,7 @@ extension Question2ViewController: UITableViewDataSource {
 extension Question2ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? Question2Cell {
-            let alertController = UIAlertController(title: cell.getLabel(), message: "Press \"OK\"", preferredStyle: .alert)
+            let alertController = UIAlertController(title: cell.areaNameLabel.text, message: "Press \"OK\"", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alertController, animated: true)
         }
