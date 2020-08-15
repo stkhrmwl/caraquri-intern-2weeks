@@ -5,9 +5,9 @@ class Question2Cell: UITableViewCell {
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var areaImageView: UIImageView!
     
-    public func setParams(_ url: URL, _ str: String) {
-        Nuke.loadImage(with: url, into: areaImageView)
-        label.text = str
+    public func setArea(name: String, imageURL: URL) {
+        label.text = name
+        Nuke.loadImage(with: imageURL, into: areaImageView)
     }
     
     public func getLabel() -> String? {

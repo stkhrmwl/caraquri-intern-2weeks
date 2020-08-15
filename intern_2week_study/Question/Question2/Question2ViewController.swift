@@ -27,7 +27,7 @@ extension Question2ViewController: UITableViewDataSource {
             let url = URL(string: "https://placehold.jp/36x36.png") else {
             return Question2Cell()
         }
-        cell.setParams(url, areaTexts[indexPath.row])
+        cell.setArea(name: areaTexts[indexPath.row], imageURL: url)
         return cell
     }
 }
