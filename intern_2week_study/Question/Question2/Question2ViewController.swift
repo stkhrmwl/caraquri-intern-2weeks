@@ -8,6 +8,10 @@ final class Question2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+    }
+    
+    private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(R.nib.question2Cell)
