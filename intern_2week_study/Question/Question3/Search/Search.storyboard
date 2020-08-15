@@ -20,6 +20,9 @@
                                 <rect key="frame" x="192" y="433.5" width="30" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="検索"/>
+                                <connections>
+                                    <action selector="runSearch:" destination="hE7-Bk-rHS" eventType="touchDown" id="jfH-9x-Faj"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キーワードを入力して検索" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-tf-hc7">
                                 <rect key="frame" x="107" y="339.5" width="200" height="34"/>
@@ -39,6 +42,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EnP-FA-CAh"/>
                     </view>
+                    <connections>
+                        <outlet property="searchButton" destination="4Fc-b5-6Xi" id="Ief-ZB-bRz"/>
+                        <outlet property="searchTextField" destination="Zcc-tf-hc7" id="hFv-xy-dTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfg-6f-mrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
