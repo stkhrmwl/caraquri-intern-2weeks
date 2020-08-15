@@ -16,6 +16,7 @@ final class ArticleListViewController: UIViewController {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(R.nib.articleListCell)
     }
     
     public func setArticles(articles: [Article]) {
@@ -25,11 +26,11 @@ final class ArticleListViewController: UIViewController {
 
 extension ArticleListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        return ArticleListCell()
     }
     
 }
