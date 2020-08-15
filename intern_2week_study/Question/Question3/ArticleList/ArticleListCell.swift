@@ -1,11 +1,4 @@
-//
-//  ArticleListCell.swift
-//  intern_2week_study
-//
-//  Created by TAKAHARA on 2020/08/15.
-//  Copyright © 2020 caraquri. All rights reserved.
-//
-
+import Nuke
 import UIKit
 
 class ArticleListCell: UITableViewCell {
@@ -14,15 +7,13 @@ class ArticleListCell: UITableViewCell {
     @IBOutlet weak var titleTextLabel: UILabel!
     @IBOutlet weak var descriptionTextLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    public func setArticleListCell(_ article: Article) {
+        titleTextLabel.text = article.title
+        descriptionTextLabel.text = "LGTM: " +  String(article.likesCount)
+        guard let urlStr = article.user?.profileImageUrl, let url = URL(string: urlStr) else {
+            return
+        }
+        Nuke.loadImage(with: url, into: userImageView)
     }
     
 }
