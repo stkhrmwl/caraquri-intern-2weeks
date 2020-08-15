@@ -39,6 +39,8 @@
 		08EF05C524C37A6600129792 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083FD71524C34D2300383122 /* Rswift.framework */; };
 		0F192CC024E7C68500922FA5 /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F192CBE24E7C68500922FA5 /* ArticleListCell.swift */; };
 		0F192CC124E7C68500922FA5 /* ArticleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F192CBF24E7C68500922FA5 /* ArticleListCell.xib */; };
+		0F192CC324E7CD2500922FA5 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */; };
+		0F192CC524E7CD6E00922FA5 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		08C9DD9024E0163E00459724 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0F192CBE24E7C68500922FA5 /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
 		0F192CBF24E7C68500922FA5 /* ArticleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListCell.xib; sourceTree = "<group>"; };
+		0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				0F192CBE24E7C68500922FA5 /* ArticleListCell.swift */,
+				0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */,
+				0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */,
 				0F192CBF24E7C68500922FA5 /* ArticleListCell.xib */,
 			);
 			path = ArticleList;
@@ -352,6 +358,7 @@
 				082CF75F24D569E7001F7680 /* SampleSearch.storyboard in Resources */,
 				08C9DD8424DF098400459724 /* Question2.storyboard in Resources */,
 				08C9DD8A24DF0CBE00459724 /* Question2Cell.xib in Resources */,
+				0F192CC524E7CD6E00922FA5 /* ArticleList.storyboard in Resources */,
 				083268AC24DEE795007B6A7A /* Question1.storyboard in Resources */,
 				083FD70C24C33D2B00383122 /* LaunchScreen.storyboard in Resources */,
 				08C9DD8F24E0162200459724 /* Search.storyboard in Resources */,
@@ -431,6 +438,7 @@
 			files = (
 				083268AA24DEE784007B6A7A /* Question1ViewController.swift in Sources */,
 				0848136024DD7AA600BF590E /* QuestionListViewController.swift in Sources */,
+				0F192CC324E7CD2500922FA5 /* ArticleListViewController.swift in Sources */,
 				0841933724D9505800BFCBD3 /* Logger.swift in Sources */,
 				088E557A24D669AF00A2FE3E /* Array+Extensions.swift in Sources */,
 				0F192CC024E7C68500922FA5 /* ArticleListCell.swift in Sources */,
