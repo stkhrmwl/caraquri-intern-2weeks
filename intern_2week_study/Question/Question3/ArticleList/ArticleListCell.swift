@@ -7,7 +7,7 @@ class ArticleListCell: UITableViewCell {
     @IBOutlet weak var titleTextLabel: UILabel!
     @IBOutlet weak var descriptionTextLabel: UILabel!
     
-    public func setArticleListCell(_ article: Article) {
+    public func setElements(_ article: Article) {
         titleTextLabel.text = article.title
         descriptionTextLabel.text = "LGTM: " +  String(article.likesCount)
         guard let urlStr = article.user?.profileImageUrl, let url = URL(string: urlStr) else {

@@ -32,7 +32,7 @@ extension ArticleListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.articleListCell, for: indexPath), let article = articles[safe: indexPath.row] else {
             return UITableViewCell()
         }
-        cell.setArticleListCell(article)
+        cell.setElements(article)
         return cell
     }
     
@@ -44,11 +44,9 @@ extension ArticleListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         guard let urlStr = articles[safe: indexPath.row]?.url, let url = URL(string: urlStr) else {
             return
         }
-        
         let safariViewController = SFSafariViewController(url: url)
         present(safariViewController, animated: true)
     }
