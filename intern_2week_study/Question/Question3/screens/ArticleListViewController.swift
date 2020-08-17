@@ -5,21 +5,26 @@ final class ArticleListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var articles: [Article] = []
+    private var articles: [Article]!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
     }
     
+    public func setArticles(_ articles: [Article]) {
+        self.articles = articles
+    }
+    
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 48
         tableView.register(R.nib.articleListCell)
-    }
-    
-    public func setArticles(articles: [Article]) {
-        self.articles = articles
     }
 }
 
@@ -39,15 +44,10 @@ extension ArticleListViewController: UITableViewDataSource {
 }
 
 extension ArticleListViewController: UITableViewDelegate {
-    func tableView(_ tableVIew: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let urlStr = articles[safe: indexPath.row]?.url, let url = URL(string: urlStr) else {
-            return
-        }
-        let safariViewController = SFSafariViewController(url: url)
-        present(safariViewController, animated: true)
+        guard let urlStr = articles[safe: indexPath.row]?.url, let url = URL(string: urlStr) else { return }
+        present(SFSafariViewController(url: url), animated: true)
     }
 }
+
+extension ArticleListViewController: Instantiatable {}

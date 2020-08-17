@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="検索"/>
                                 <connections>
-                                    <action selector="runSearch:" destination="hE7-Bk-rHS" eventType="touchDown" id="jfH-9x-Faj"/>
+                                    <action selector="searchArticles:" destination="hE7-Bk-rHS" eventType="touchDown" id="20O-78-yRv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キーワードを入力して検索" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-tf-hc7">
