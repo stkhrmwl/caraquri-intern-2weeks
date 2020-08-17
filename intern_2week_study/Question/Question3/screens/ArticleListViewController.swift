@@ -9,15 +9,12 @@ final class ArticleListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.articles = FetchedArticl.getArticles()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-    }
-    
-    public func setArticles(_ articles: [Article]) {
-        self.articles = articles
     }
     
     private func setupTableView() {

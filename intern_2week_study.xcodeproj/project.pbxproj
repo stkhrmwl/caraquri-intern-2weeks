@@ -42,6 +42,7 @@
 		0F49694824EA93BC0042477E /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F49694624EA6CA30042477E /* Instantiatable.swift */; };
 		0F49694B24EAB24D0042477E /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */; };
 		0F49694C24EAB2600042477E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C9DD8E24E0162200459724 /* Search.storyboard */; };
+		0F6C1F0424EB3D9C003EDDEA /* FetchedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6C1F0324EB3D9C003EDDEA /* FetchedArticle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
 		0F49694624EA6CA30042477E /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
+		0F6C1F0324EB3D9C003EDDEA /* FetchedArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedArticle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				0F49694624EA6CA30042477E /* Instantiatable.swift */,
+				0F6C1F0324EB3D9C003EDDEA /* FetchedArticle.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				08C9DD8624DF0A8E00459724 /* Question2ViewController.swift in Sources */,
 				088E557524D660B700A2FE3E /* SampleArticleListCell.swift in Sources */,
 				082CF76B24D5D526001F7680 /* APIClient.swift in Sources */,
+				0F6C1F0424EB3D9C003EDDEA /* FetchedArticle.swift in Sources */,
 				082CF76324D59281001F7680 /* R.generated.swift in Sources */,
 				082CF76524D5A5B9001F7680 /* SampleArticleListViewController.swift in Sources */,
 				08C5FE2624CD7A8B007100CA /* Article.swift in Sources */,
