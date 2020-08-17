@@ -31,7 +31,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9R-5G-FUH">
-                        <rect key="frame" x="60" y="32" width="36" height="17"/>
+                        <rect key="frame" x="60" y="23" width="36" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -40,11 +40,11 @@
                 <constraints>
                     <constraint firstItem="mYU-C8-Zmh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="65R-TA-U8g"/>
                     <constraint firstAttribute="trailing" secondItem="Q2G-92-rgT" secondAttribute="trailing" constant="16" id="ECS-Yi-lvM"/>
+                    <constraint firstAttribute="bottom" secondItem="u9R-5G-FUH" secondAttribute="bottom" constant="4" id="EPF-EX-2vd"/>
                     <constraint firstItem="Q2G-92-rgT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="G33-it-8mn"/>
                     <constraint firstItem="Q2G-92-rgT" firstAttribute="leading" secondItem="mYU-C8-Zmh" secondAttribute="trailing" constant="8" id="REf-4o-xRP"/>
                     <constraint firstItem="u9R-5G-FUH" firstAttribute="leading" secondItem="mYU-C8-Zmh" secondAttribute="trailing" constant="8" id="WXy-Oy-bxh"/>
                     <constraint firstItem="mYU-C8-Zmh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c9L-S2-UwS"/>
-                    <constraint firstItem="u9R-5G-FUH" firstAttribute="top" secondItem="Q2G-92-rgT" secondAttribute="bottom" constant="4" id="fjV-kj-oTF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
