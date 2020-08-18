@@ -4,9 +4,7 @@ final class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
-    
-    private(set) var articles: [Article]!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
