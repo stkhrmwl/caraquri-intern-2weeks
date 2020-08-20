@@ -34,7 +34,7 @@ extension ArticleListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.articleListCell, for: indexPath), let article = articles[safe: indexPath.row] else {
             return UITableViewCell()
         }
-        cell.setElements(article)
+        cell.set(article)
         return cell
     }
     
