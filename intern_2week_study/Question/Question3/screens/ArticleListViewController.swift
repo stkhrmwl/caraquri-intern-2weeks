@@ -7,9 +7,13 @@ final class ArticleListViewController: UIViewController {
     
     private var articles: [Article]!
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.articles = FetchedArticl.getArticles()
+    static func instantiate(_ articles: [Article]) -> ArticleListViewController {
+        let storyboard: UIStoryboard = UIStoryboard(name: "ArticleList", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "articleList") as? ArticleListViewController else {
+            return ArticleListViewController()
+        }
+        nextViewController.articles = articles
+        return nextViewController
     }
     
     override func viewDidLoad() {
@@ -23,6 +27,7 @@ final class ArticleListViewController: UIViewController {
         tableView.rowHeight = 48
         tableView.register(R.nib.articleListCell)
     }
+
 }
 
 extension ArticleListViewController: UITableViewDataSource {
@@ -46,5 +51,3 @@ extension ArticleListViewController: UITableViewDelegate {
         present(SFSafariViewController(url: url), animated: true)
     }
 }
-
-extension ArticleListViewController: Instantiatable {}

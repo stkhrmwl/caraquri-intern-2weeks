@@ -4,6 +4,8 @@ final class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
+    
+    private var articles: [Article]!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ final class SearchViewController: UIViewController {
             DispatchQueue.main.sync {
                 switch result {
                 case .success(let articles):
-                    FetchedArticl.setArticles(articles)
+                    self?.articles = articles
                     self?.navigateArticleListScreen()
                 case .failure(let error):
                     print(error.localizedDescription)
@@ -26,7 +28,7 @@ final class SearchViewController: UIViewController {
     }
     
     private func navigateArticleListScreen() {
-        let vc = ArticleListViewController.instantiateFromStoryboard()
+        let vc = ArticleListViewController.instantiate(articles)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

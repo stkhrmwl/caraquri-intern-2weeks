@@ -11,7 +11,7 @@
         <!--Search View Controller-->
         <scene sceneID="VwI-RL-Lms">
             <objects>
-                <viewController storyboardIdentifier="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hE7-Bk-rHS" customClass="SearchViewController" customModule="intern_2week_study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hE7-Bk-rHS" customClass="SearchViewController" customModule="intern_2week_study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlp-gX-m4Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
