@@ -10,8 +10,7 @@ final class SearchViewController: UIViewController {
     }
     
     @IBAction func searchArticles(_ sender: Any) {
-        guard let keyword = searchTextField.text else { return }
-        if keyword.isEmpty { return }
+        guard let keyword = searchTextField.text, !keyword.isEmpty else { return }
         
         APIClient.fetchArticles(keyword: keyword) { [weak self] result in
             DispatchQueue.main.sync {
