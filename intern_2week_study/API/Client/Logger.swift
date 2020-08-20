@@ -46,7 +46,7 @@ struct Logger {
         requestLog += data.prettyPrintedJSONString ?? ""
         requestLog += "\n------------------------------------------------------------------------>\n"
 
-        // print(requestLog)
+        print(requestLog)
     }
 }
 
