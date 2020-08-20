@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mx0-En-L3c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,34 +9,34 @@
     </dependencies>
     <scenes>
         <!--Article List View Controller-->
-        <scene sceneID="6VM-vk-rAZ">
+        <scene sceneID="lXj-6D-2MO">
             <objects>
-                <viewController storyboardIdentifier="articleList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e8r-8f-foE" customClass="ArticleListViewController" customModule="intern_2week_study" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aMX-ig-lHH">
+                <viewController storyboardIdentifier="articleList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mx0-En-L3c" customClass="ArticleListViewController" customModule="intern_2week_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ihw-N6-iBL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-41-9JT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eno-uz-vqH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lSE-hd-MVe" firstAttribute="bottom" secondItem="R4t-41-9JT" secondAttribute="bottom" id="5r2-hi-aka"/>
-                            <constraint firstItem="R4t-41-9JT" firstAttribute="leading" secondItem="lSE-hd-MVe" secondAttribute="leading" id="9YR-s7-OLN"/>
-                            <constraint firstItem="lSE-hd-MVe" firstAttribute="trailing" secondItem="R4t-41-9JT" secondAttribute="trailing" id="P1M-B6-CDp"/>
-                            <constraint firstItem="R4t-41-9JT" firstAttribute="top" secondItem="lSE-hd-MVe" secondAttribute="top" id="cEG-0K-pK9"/>
+                            <constraint firstItem="p0M-dZ-aM2" firstAttribute="trailing" secondItem="eno-uz-vqH" secondAttribute="trailing" id="3S7-r0-AmL"/>
+                            <constraint firstItem="eno-uz-vqH" firstAttribute="leading" secondItem="p0M-dZ-aM2" secondAttribute="leading" id="AE5-Fd-EB8"/>
+                            <constraint firstItem="eno-uz-vqH" firstAttribute="top" secondItem="p0M-dZ-aM2" secondAttribute="top" id="KSa-SI-1u2"/>
+                            <constraint firstItem="p0M-dZ-aM2" firstAttribute="bottom" secondItem="eno-uz-vqH" secondAttribute="bottom" id="SIo-yQ-J8u"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lSE-hd-MVe"/>
+                        <viewLayoutGuide key="safeArea" id="p0M-dZ-aM2"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="R4t-41-9JT" id="xgf-jJ-gZS"/>
+                        <outlet property="tableView" destination="eno-uz-vqH" id="EZ4-Ar-Rdt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zpJ-6C-IW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mX-VG-XFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73.913043478260875" y="-108.48214285714285"/>
+            <point key="canvasLocation" x="0.0" y="19"/>
         </scene>
     </scenes>
 </document>

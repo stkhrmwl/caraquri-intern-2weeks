@@ -37,9 +37,9 @@
 		08EF05C524C37A6600129792 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083FD71524C34D2300383122 /* Rswift.framework */; };
 		0F192CC024E7C68500922FA5 /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F192CBE24E7C68500922FA5 /* ArticleListCell.swift */; };
 		0F192CC124E7C68500922FA5 /* ArticleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F192CBF24E7C68500922FA5 /* ArticleListCell.xib */; };
-		0F192CC324E7CD2500922FA5 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */; };
-		0F35803A24EE4EA9003626F2 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */; };
 		0F35803C24EE4F2A003626F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CF76224D59281001F7680 /* R.generated.swift */; };
+		0F35803F24EE7C20003626F2 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35803E24EE7C20003626F2 /* ArticleListViewController.swift */; };
+		0F35804124EE7C3B003626F2 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F35804024EE7C3B003626F2 /* ArticleList.storyboard */; };
 		0F49694C24EAB2600042477E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C9DD8E24E0162200459724 /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -79,8 +79,8 @@
 		08C9DD9024E0163E00459724 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0F192CBE24E7C68500922FA5 /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
 		0F192CBF24E7C68500922FA5 /* ArticleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListCell.xib; sourceTree = "<group>"; };
-		0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
-		0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
+		0F35803E24EE7C20003626F2 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		0F35804024EE7C3B003626F2 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,10 +274,10 @@
 		0F49693524EA3CBE0042477E /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				0F192CC424E7CD6E00922FA5 /* ArticleList.storyboard */,
-				0F192CC224E7CD2500922FA5 /* ArticleListViewController.swift */,
 				08C9DD8E24E0162200459724 /* Search.storyboard */,
 				08C9DD9024E0163E00459724 /* SearchViewController.swift */,
+				0F35803E24EE7C20003626F2 /* ArticleListViewController.swift */,
+				0F35804024EE7C3B003626F2 /* ArticleList.storyboard */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				082CF75F24D569E7001F7680 /* SampleSearch.storyboard in Resources */,
 				08C9DD8424DF098400459724 /* Question2.storyboard in Resources */,
 				08C9DD8A24DF0CBE00459724 /* Question2Cell.xib in Resources */,
-				0F35803A24EE4EA9003626F2 /* ArticleList.storyboard in Resources */,
+				0F35804124EE7C3B003626F2 /* ArticleList.storyboard in Resources */,
 				083268AC24DEE795007B6A7A /* Question1.storyboard in Resources */,
 				083FD70C24C33D2B00383122 /* LaunchScreen.storyboard in Resources */,
 				08C9DD8124DEF30800459724 /* QuestionListCell.xib in Resources */,
@@ -438,7 +438,7 @@
 			files = (
 				083268AA24DEE784007B6A7A /* Question1ViewController.swift in Sources */,
 				0848136024DD7AA600BF590E /* QuestionListViewController.swift in Sources */,
-				0F192CC324E7CD2500922FA5 /* ArticleListViewController.swift in Sources */,
+				0F35803F24EE7C20003626F2 /* ArticleListViewController.swift in Sources */,
 				0841933724D9505800BFCBD3 /* Logger.swift in Sources */,
 				088E557A24D669AF00A2FE3E /* Array+Extensions.swift in Sources */,
 				0F192CC024E7C68500922FA5 /* ArticleListCell.swift in Sources */,

@@ -8,12 +8,11 @@ final class ArticleListViewController: UIViewController {
     private var articles: [Article]!
     
     static func instantiate(_ articles: [Article]) -> ArticleListViewController {
-        let storyboard: UIStoryboard = UIStoryboard(name: "ArticleList", bundle: nil)
-        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "articleList") as? ArticleListViewController else {
+        guard let vc = R.storyboard.articleList.instantiateInitialViewController() else {
             return ArticleListViewController()
         }
-        nextViewController.articles = articles
-        return nextViewController
+        vc.articles = articles
+        return vc
     }
     
     override func viewDidLoad() {
